@@ -1,4 +1,4 @@
-# Adventure Game
+# Adventure Game :smiley_cat:
 
 ## Overview
 
@@ -13,6 +13,7 @@ A very work in progress adventure game to try and emulate something like the ori
 * Enthusiasm :trollface:
 
 ### Set up this project
+
 Clone this repo
 
 ```shell
