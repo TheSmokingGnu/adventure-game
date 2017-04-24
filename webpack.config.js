@@ -1,12 +1,14 @@
+const path = require('path');
 module.exports = {
-    entry: './index.ts',
+    entry: './src/index.ts',
     output: {
-        path: __dirname,
-        filename: 'bundle.js'
+        path: path.resolve(__dirname, "build"),
+        publicPath: "/assets/",
+        filename: "bundle.js"
     },
     resolve: {
         // Add `.ts` and `.tsx` as a resolvable extension.
-        extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
+        extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js']
     },
     module: {
         loaders: [

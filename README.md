@@ -1,12 +1,34 @@
-# Excalibur TypeScript & Webpack Example
+# Adventure Game
 
-To run:
+## Overview
 
-    npm install
-    npm run all
+A very work in progress adventure game to try and emulate something like the original zelda games.... but better :smiley_cat:
 
-This example uses [`webpack`](https://webpack.github.io/) and 
-[`ts-loader`](https://github.com/TypeStrong/ts-loader) to compile the TypeScript. 
-Excalibur is bundled via webpack into the output **bundle.js** file.
+## Getting Started
 
-See **webpack.config.js** for the bundle configuration.
+### Prerequisits
+
+* Git installed - <https://git-scm.com/downloads> 
+* Node installed - <https://nodejs.org/en/download/>
+* Enthusiasm :trollface:
+
+### Set up this project
+Clone this repo
+
+```shell
+git clone 
+```
+
+install all dependancies
+```
+npm install
+```
+
+Done! Now you can start coding! :shipit:
+
+
+## TODO
+
+* Service workers (to play offline)
+* Make a room with a character in that can move
+* Make the character swing stick

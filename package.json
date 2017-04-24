@@ -4,14 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "all": "node_modules/.bin/webpack"
+    "prod": "webpack",
+    "dev": "webpack-dev-server --content-base build/",
+    "quality:tslint": "tslint --fix -c tslint.json 'src/**/*.ts'"
   },
   "author": "Excalibur.js Team",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "excalibur": "next",
     "ts-loader": "^1.3.3",
+    "tslint": "^5.1.0",
     "typescript": "^2.1.4",
-    "webpack": "^1.14.0"
+    "webpack": "2.1.0-beta.25",
+    "webpack-dev-server": "2.1.0-beta.9"
+  },
+  "dependencies": {
+    "excalibur": "^0.10.0-alpha.1418"
   }
 }
