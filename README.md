@@ -2,7 +2,7 @@
 
 ## Overview
 
-A very work in progress adventure game to try and emulate something like the original zelda games.... but better :smiley_cat:
+A very work in progress adventure game to try and emulate something like the original zelda games.... but better
 
 ## Getting Started
 
@@ -17,11 +17,12 @@ A very work in progress adventure game to try and emulate something like the ori
 Clone this repo
 
 ```shell
-git clone 
+git clone
 ```
 
 install all dependancies
-```
+
+```shell
 npm install
 ```
 

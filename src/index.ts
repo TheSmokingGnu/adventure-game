@@ -1,5 +1,6 @@
-import * as ex from "excalibur";
 
-const game = new ex.Engine({ width: 500, height: 500 });
+import {Engine} from "excalibur";
+
+const game = new Engine({ width: 500, height: 500 });
 
 game.start();

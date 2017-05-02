@@ -1,23 +1,42 @@
 {
-  "name": "example-webpack",
+  "name": "adventure-game",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Bring back Monkey Island",
+  "main": "src/index.js",
   "scripts": {
     "prod": "webpack",
     "dev": "webpack-dev-server --content-base build/",
-    "quality:tslint": "tslint --fix -c tslint.json 'src/**/*.ts'"
+    "test": "karma start",
+    "quality": "tslint --fix -c tslint.json 'src/**/*.ts'",
+    "security:outdated-packages": "npm outdated",
+    "security:vulnerable-packages": "snyk test",
+    "security": "npm run security:outdated-packages && npm run security:vulnerable-packages"
   },
   "author": "Excalibur.js Team",
   "license": "BSD-2-Clause",
   "devDependencies": {
+    "@types/jasmine": "^2.5.47",
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.6.0",
+    "jasmine-core": "^2.6.1",
+    "jasmine-ts": "^0.1.0",
+    "karma": "^1.6.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-junit-reporter": "^1.2.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-typescript": "^3.0.1",
+    "karma-webpack": "^2.0.3",
+    "phantomjs-prebuilt": "^2.1.14",
+    "snyk": "^1.29.0",
     "ts-loader": "^1.3.3",
     "tslint": "^5.1.0",
-    "typescript": "^2.1.4",
-    "webpack": "2.1.0-beta.25",
-    "webpack-dev-server": "2.1.0-beta.9"
+    "typescript": "2.x.x",
+    "webpack": "2.x.x",
+    "webpack-dev-server": "2.x.x"
   },
   "dependencies": {
-    "excalibur": "^0.10.0-alpha.1418"
+    "excalibur": "^0.10.0"
   }
 }
