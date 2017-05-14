@@ -17,7 +17,7 @@ module.exports = function (config) {
       resolve: webpackConfig.resolve,
       node: {fs: 'empty' }
     },
-    reporters: ['progress'],
+    reporters: ['progress', 'coverage'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
