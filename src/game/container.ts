@@ -1,7 +1,7 @@
 import {Engine} from 'excalibur';
 
 /**
- * Set up a blank canvas
+ * Set up a blank canvas with default colour
  * @class Container
  */
 export class Container {
