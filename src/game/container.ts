@@ -1,7 +1,7 @@
 import {Engine} from 'excalibur';
 
 /**
- * Define how big the game container is going to be
+ * Set up a blank canvas
  * @class Container
  */
 export class Container {
