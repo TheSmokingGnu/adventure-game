@@ -1,5 +1,7 @@
 # Generated files
 build
+docs
+coverage
 
 # Logs
 logs

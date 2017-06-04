@@ -1,29 +1,27 @@
-var webpackConfig = require('./webpack.config');
+var webpackConfig = require('./webpack.test.config');
 
 module.exports = function (config) {
   config.set({
     basePath: '',
     frameworks: ['jasmine'],
     files: [
+      'src/index.ts',
       'spec/**/*.ts'
     ],
     exclude: [
     ],
     preprocessors: {
+      'src/index.ts': ['webpack'],
       'spec/**/*.ts': ['webpack']
     },
-    webpack: {
-      module: webpackConfig.module,
-      resolve: webpackConfig.resolve,
-      node: {fs: 'empty' }
-    },
-    reporters: ['progress', 'coverage'],
+    webpack: webpackConfig,
+    reporters: ['progress', 'coverage-istanbul'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['PhantomJS'],
-    singleRun: false,
+    singleRun: true,
     concurrency: Infinity
   })
 }

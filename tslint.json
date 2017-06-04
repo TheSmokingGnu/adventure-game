@@ -4,6 +4,23 @@
         "tslint:recommended"
     ],
     "jsRules": {},
-    "rules": {},
+    "rules":  {      
+     "quotemark" : [true, "single"],
+     "class-name": true,
+     "semicolon": [true, "always"],
+     "indent": [true, "spaces", 4],
+     "cyclomatic-complexity": [true, 10],
+     "max-file-line-count": [true, 300],
+     "max-line-length": [true, 80],
+     "prefer-const": true,
+     "align": [true, "parameters", "statements"],
+     "curly": true,
+     "arrow-return-shorthand": [true, "multiline"],
+     "comment-format": [true, "check-space", "check-uppercase"],
+     "jsdoc-format": true,
+     "completed-docs": [true, "classes", "functions", "methods"],
+     "max-classes-per-file": [true, 2]
+
+    },
     "rulesDirectory": []
 }
