@@ -6,7 +6,7 @@
   "scripts": {
     "prod": "webpack",
     "dev": "webpack-dev-server --content-base build/",
-    "test": "karma start",
+    "test": "snyk test && karma start",
     "doc": "typedoc --out docs --mode modules --module commonjs src",
     "quality": "tslint --fix -c tslint.json 'src/**/*.ts'",
     "security:outdated-packages": "npm outdated",
@@ -19,7 +19,6 @@
   "devDependencies": {
     "@types/jasmine": "^2.5.47",
     "@types/node": "^7.0.27",
-    "git": "^0.1.5",
     "istanbul": "^0.4.5",
     "istanbul-instrumenter-loader": "^2.0.0",
     "jasmine": "^2.6.0",
@@ -32,16 +31,17 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-webpack": "^2.0.3",
     "phantomjs-prebuilt": "^2.1.14",
-    "snyk": "^1.29.0",
     "ts-loader": "^2.0.0",
     "tslint": "^5.1.0",
     "typedoc": "^0.7.1",
     "typescript": "^2.0.0",
     "typings": "^2.1.1",
     "webpack": "^2.6.1",
-    "webpack-dev-server": "2.x.x"
+    "webpack-dev-server": "2.x.x",
+    "snyk": "^1.33.0"
   },
   "dependencies": {
     "excalibur": "^0.10.0"
-  }
+  },
+  "snyk": true
 }
