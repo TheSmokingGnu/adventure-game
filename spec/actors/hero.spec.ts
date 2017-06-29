@@ -1,7 +1,17 @@
+import {Animation, Engine} from 'excalibur';
 import 'jasmine';
 import { Direction } from '../../src/actor-attributes/direction';
 import { Hero } from '../../src/actors/hero';
 
 it('should be truthy', () => {
-    expect(new Hero(Direction.down).direction).toEqual(Direction.down);
+    const hero = new Hero(Direction.down);
+
+    expect(hero.direction).toEqual(Direction.down);
+});
+
+it('should add an animation', () => {
+    const hero = new Hero(Direction.down);
+
+    expect(hero.currentDrawing)
+        .toEqual(jasmine.any(Animation));
 });

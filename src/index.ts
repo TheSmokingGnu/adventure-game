@@ -1,7 +1,17 @@
+import {Engine, Loader} from 'excalibur';
+import {Direction} from './actor-attributes/Direction';
+import {Hero} from './actors/hero';
 import {Container} from './game/container';
 /**
  * Entry point for the app.  Don't put any logic in here.
  */
-const container = new Container();
+const game: Engine = new Container().game;
+const hero = new Hero(Direction.down);
 
-container.game.start();
+const loader = new Loader();
+loader.addResource(hero.texture);
+
+game.start(loader).then( () => {
+    hero.addHeroToScreen(game);
+    game.add(hero);
+});

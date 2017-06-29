@@ -13,7 +13,7 @@ export class Container {
      * Return a new Engine that sets up the blank container
      */
     constructor() {
-        this.game = new Engine({height: Container.WIDTH,
-                                width: Container.HEIGHT});
+        this.game = new Engine({height: Container.HEIGHT,
+                                width: Container.WIDTH});
     }
 }

@@ -3,7 +3,6 @@ module.exports = {
     entry: './src/index.ts',
     output: {
         path: path.resolve(__dirname, "build"),
-        publicPath: "/assets/",
         filename: "bundle.js"
     },
     devtool: 'inline-source-map',

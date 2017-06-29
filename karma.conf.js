@@ -5,13 +5,11 @@ module.exports = function (config) {
     basePath: '',
     frameworks: ['jasmine'],
     files: [
-      'src/index.ts',
       'spec/**/*.ts'
     ],
     exclude: [
     ],
     preprocessors: {
-      'src/index.ts': ['webpack'],
       'spec/**/*.ts': ['webpack']
     },
     webpack: webpackConfig,
@@ -19,7 +17,7 @@ module.exports = function (config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: true,
+    autoWatch: false,
     browsers: ['PhantomJS'],
     singleRun: true,
     concurrency: Infinity
