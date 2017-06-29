@@ -16,12 +16,14 @@ export class Hero extends Actor {
         super();
         this.texture = new Texture('/assets/tx/player-idle.png');
         this.direction = direction;
+        this.vel.x = 5;
+        this.vel.y = 5;
     }
 
     public addHeroToScreen(game: Engine) {
         const playerIdleSheet = new SpriteSheet(this.texture, 5, 1, 32, 32);
         const playerIdleAnimation = playerIdleSheet
-                                        .getAnimationForAll(game, 2000);
+                                        .getAnimationForAll(game, 20000);
         this.addDrawing('idle', playerIdleAnimation);
     }
 }

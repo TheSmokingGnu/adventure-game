@@ -11,6 +11,7 @@ it('should be truthy', () => {
 
 it('should add an animation', () => {
     const hero = new Hero(Direction.down);
+    hero.addHeroToScreen(new Engine());
 
     expect(hero.currentDrawing)
         .toEqual(jasmine.any(Animation));

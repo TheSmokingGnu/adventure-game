@@ -7,6 +7,10 @@ module.exports = function (config) {
     files: [
       'spec/**/*.ts'
     ],
+    // When assets are requested point to the source
+    proxies: {
+      '/assets/': 'src/assets'
+    },
     exclude: [
     ],
     preprocessors: {
