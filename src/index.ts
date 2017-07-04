@@ -1,5 +1,5 @@
 import {Engine, Loader} from 'excalibur';
-import {Direction} from './actor-attributes/Direction';
+import {Direction} from './actor-attributes/direction';
 import {Hero} from './actors/hero';
 import {Container} from './game/container';
 /**
